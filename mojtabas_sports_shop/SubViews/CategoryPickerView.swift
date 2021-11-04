@@ -12,7 +12,7 @@ struct CategoryPickerView: View {
     let isSelected: Bool
     
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 10) {
 
             // icon
             Image(category.getImage())
@@ -20,7 +20,7 @@ struct CategoryPickerView: View {
                 .frame(width: 30, height: 30, alignment: .center)
 
             // dot to show when selected
-            Circle().fill(Color.pink)
+            Circle().fill(Color.pink.opacity(0.7))
                 .frame(width: 12, height: 12, alignment: .center)
                 .scaleEffect(
                     isSelected ? 1 : 0
@@ -29,9 +29,9 @@ struct CategoryPickerView: View {
 
         }
         .padding()
-        .frame(maxHeight: 110)
+        .frame(height: 110)
         .background(
-            isSelected ? Color.pink.opacity(0.3) : Color.white
+            isSelected ? Color.pink.opacity(0.2) : Color.white
         )
         .cornerRadius(80)
         .foregroundColor(.black)
