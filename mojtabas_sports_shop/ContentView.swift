@@ -33,7 +33,18 @@ struct ContentView: View {
 
                     }
                 }
+                .padding(.bottom)
                 
+                Text("Recently Popular")
+                    .font(.body)
+                    .fontWeight(.regular)
+                    .padding(.horizontal)
+                    .padding(.bottom, 8)
+                
+                Text("Top TShirts")
+                    .font(.title)
+                    .fontWeight(.heavy)
+                    .padding(.horizontal)
                 
                 // products
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -45,6 +56,7 @@ struct ContentView: View {
                         
                     }
                 }
+                
                 
             }
             .navigationBarTitleDisplayMode(.inline)

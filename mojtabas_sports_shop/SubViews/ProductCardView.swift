@@ -52,7 +52,7 @@ struct ProductCardView: View {
             
         }
         .clipped()
-        .frame(width: 260, height: 400, alignment: .center)
+        .frame(width: 280, height: 400, alignment: .center)
         .cornerRadius(20)
         .padding()
         
