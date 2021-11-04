@@ -9,8 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        NavigationView {
+            
+            VStack {
+                
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(
+                leading:
+                    Image(systemName: "line.3.horizontal")
+                    .resizable()
+                    .frame(width: 24, height: 18, alignment: .center),
+                trailing:
+                    Image("person")
+                    .resizable()
+                    .frame(width: 32, height: 32, alignment: .center)
+                    .clipShape(Circle())
+            )
+            
+        }
     }
 }
 
