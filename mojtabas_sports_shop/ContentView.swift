@@ -15,36 +15,34 @@ struct ContentView: View {
     
     var body: some View {
         
-        NavigationView {
             
-            TabView {
-                
+        TabView {
+            
+            NavigationView {
                 HomePageView()
-                    .tabItem {
-                        Label("Home", systemImage: "house")
-                    }
-                
-                Text("Wish List")
-                    .tabItem {
-                        Label("Widh List", systemImage: "gift")
-                    }
-                
-                Text("My Cart")
-                    .tabItem {
-                        Label("Cart", systemImage: "bag")
-                    }
-                
-                Text("Profile")
-                    .tabItem {
-                        Label("Widh List", systemImage: "person")
-                    }
-                
-                
-            }
-            .accentColor(Color.pink)
+            }.tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            
+            Text("Wish List")
+                .tabItem {
+                    Label("Widh List", systemImage: "gift")
+                }
+            
+            Text("My Cart")
+                .tabItem {
+                    Label("Cart", systemImage: "bag")
+                }
+            
+            Text("Profile")
+                .tabItem {
+                    Label("Widh List", systemImage: "person")
+                }
             
             
         }
+        .accentColor(Color.pink)
+          
         
     }
 }
