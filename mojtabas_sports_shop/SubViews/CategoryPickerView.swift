@@ -21,7 +21,7 @@ struct CategoryPickerView: View {
 
             // dot to show when selected
             Circle().fill(Color.pink)
-                .frame(width: 16, height: 16, alignment: .center)
+                .frame(width: 12, height: 12, alignment: .center)
                 .scaleEffect(
                     isSelected ? 1 : 0
                 )
