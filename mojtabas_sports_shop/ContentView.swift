@@ -9,70 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let categories: [ProductCategory] = [ .shoe, .tshirt, .ball, .game ]
-    @State var selectedCategory: String = "tshirt"
+   init() {
+       UITabBar.appearance().tintColor = UIColor.systemPink
+   }
     
     var body: some View {
         
-        NavigationView {
+        TabView {
             
-            VStack(alignment: .leading, spacing: 0) {
-                
-                
-                // categproes
-                HStack{
-                    ForEach(categories, id: \.self) { category in
-
-                        CategoryPickerView(
-                            category: category,
-                            isSelected: selectedCategory == category.rawValue
-                        )
-                        .onTapGesture {
-                            selectedCategory = category.rawValue
-                        }
-
-                    }
+            HomePageView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
                 }
-                .padding(.bottom)
-                
-                Text("Recently Popular")
-                    .font(.body)
-                    .fontWeight(.regular)
-                    .padding(.horizontal)
-                    .padding(.bottom, 8)
-                
-                Text("Top TShirts")
-                    .font(.title)
-                    .fontWeight(.heavy)
-                    .padding(.horizontal)
-                
-                // products
-                ScrollView(.horizontal, showsIndicators: false) {
-                    LazyHStack {
-                        
-                        ForEach(products) { product in
-                            ProductCardView(product: product)
-                        }
-                        
-                    }
+            
+            Text("Wish List")
+                .tabItem {
+                    Label("Widh List", systemImage: "gift")
                 }
-                
-                
-            }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(
-                leading:
-                    Image(systemName: "line.3.horizontal")
-                    .resizable()
-                    .frame(width: 24, height: 18, alignment: .center),
-                trailing:
-                    Image("person")
-                    .resizable()
-                    .frame(width: 32, height: 32, alignment: .center)
-                    .clipShape(Circle())
-            )
+            
+            Text("My Cart")
+                .tabItem {
+                    Label("Cart", systemImage: "bag")
+                }
+            
+            Text("Profile")
+                .tabItem {
+                    Label("Widh List", systemImage: "person")
+                }
+            
             
         }
+        .accentColor(Color.pink)
+        
     }
 }
 
