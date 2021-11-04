@@ -12,7 +12,17 @@ struct ContentView: View {
         
         NavigationView {
             
-            VStack {
+            VStack(alignment: .leading, spacing: 0) {
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHStack {
+                        
+                        ForEach(products) { product in
+                            ProductCardView(product: product)
+                        }
+                        
+                    }
+                }
                 
             }
             .navigationBarTitleDisplayMode(.inline)

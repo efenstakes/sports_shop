@@ -14,6 +14,8 @@
 		CE48E728273436430074B735 /* mojtabas_sports_shopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E727273436430074B735 /* mojtabas_sports_shopTests.swift */; };
 		CE48E732273436430074B735 /* mojtabas_sports_shopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E731273436430074B735 /* mojtabas_sports_shopUITests.swift */; };
 		CE48E734273436430074B735 /* mojtabas_sports_shopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E733273436430074B735 /* mojtabas_sports_shopUITestsLaunchTests.swift */; };
+		CE48E74327343A3A0074B735 /* product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E74227343A3A0074B735 /* product.swift */; };
+		CE48E74627343D100074B735 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E74527343D100074B735 /* ProductCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		CE48E72D273436430074B735 /* mojtabas_sports_shopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mojtabas_sports_shopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE48E731273436430074B735 /* mojtabas_sports_shopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mojtabas_sports_shopUITests.swift; sourceTree = "<group>"; };
 		CE48E733273436430074B735 /* mojtabas_sports_shopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mojtabas_sports_shopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE48E74227343A3A0074B735 /* product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product.swift; sourceTree = "<group>"; };
+		CE48E74527343D100074B735 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		CE48E7152734363D0074B735 /* mojtabas_sports_shop */ = {
 			isa = PBXGroup;
 			children = (
+				CE48E74427343CDC0074B735 /* SubViews */,
+				CE48E74127343A280074B735 /* Models */,
 				CE48E7162734363D0074B735 /* mojtabas_sports_shopApp.swift */,
 				CE48E7182734363D0074B735 /* ContentView.swift */,
 				CE48E71A273436420074B735 /* Assets.xcassets */,
@@ -125,6 +131,22 @@
 				CE48E733273436430074B735 /* mojtabas_sports_shopUITestsLaunchTests.swift */,
 			);
 			path = mojtabas_sports_shopUITests;
+			sourceTree = "<group>";
+		};
+		CE48E74127343A280074B735 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE48E74227343A3A0074B735 /* product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE48E74427343CDC0074B735 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE48E74527343D100074B735 /* ProductCardView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE48E74327343A3A0074B735 /* product.swift in Sources */,
 				CE48E7192734363D0074B735 /* ContentView.swift in Sources */,
+				CE48E74627343D100074B735 /* ProductCardView.swift in Sources */,
 				CE48E7172734363D0074B735 /* mojtabas_sports_shopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
