@@ -17,6 +17,7 @@
 		CE48E74327343A3A0074B735 /* product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E74227343A3A0074B735 /* product.swift */; };
 		CE48E74627343D100074B735 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E74527343D100074B735 /* ProductCardView.swift */; };
 		CE48E748273447480074B735 /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E747273447480074B735 /* CategoryPickerView.swift */; };
+		CE48E74B273449A60074B735 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E74A273449A60074B735 /* HomePageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		CE48E74227343A3A0074B735 /* product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product.swift; sourceTree = "<group>"; };
 		CE48E74527343D100074B735 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		CE48E747273447480074B735 /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
+		CE48E74A273449A60074B735 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		CE48E7152734363D0074B735 /* mojtabas_sports_shop */ = {
 			isa = PBXGroup;
 			children = (
+				CE48E749273449930074B735 /* Views */,
 				CE48E74427343CDC0074B735 /* SubViews */,
 				CE48E74127343A280074B735 /* Models */,
 				CE48E7162734363D0074B735 /* mojtabas_sports_shopApp.swift */,
@@ -150,6 +153,14 @@
 				CE48E747273447480074B735 /* CategoryPickerView.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		CE48E749273449930074B735 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE48E74A273449A60074B735 /* HomePageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 				CE48E7192734363D0074B735 /* ContentView.swift in Sources */,
 				CE48E74627343D100074B735 /* ProductCardView.swift in Sources */,
 				CE48E748273447480074B735 /* CategoryPickerView.swift in Sources */,
+				CE48E74B273449A60074B735 /* HomePageView.swift in Sources */,
 				CE48E7172734363D0074B735 /* mojtabas_sports_shopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
