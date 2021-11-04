@@ -18,6 +18,7 @@
 		CE48E74627343D100074B735 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E74527343D100074B735 /* ProductCardView.swift */; };
 		CE48E748273447480074B735 /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E747273447480074B735 /* CategoryPickerView.swift */; };
 		CE48E74B273449A60074B735 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E74A273449A60074B735 /* HomePageView.swift */; };
+		CE48E74D273461870074B735 /* ProductDetailsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48E74C273461870074B735 /* ProductDetailsPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		CE48E74527343D100074B735 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		CE48E747273447480074B735 /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
 		CE48E74A273449A60074B735 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		CE48E74C273461870074B735 /* ProductDetailsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				CE48E74A273449A60074B735 /* HomePageView.swift */,
+				CE48E74C273461870074B735 /* ProductDetailsPageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				CE48E74327343A3A0074B735 /* product.swift in Sources */,
 				CE48E7192734363D0074B735 /* ContentView.swift in Sources */,
 				CE48E74627343D100074B735 /* ProductCardView.swift in Sources */,
+				CE48E74D273461870074B735 /* ProductDetailsPageView.swift in Sources */,
 				CE48E748273447480074B735 /* CategoryPickerView.swift in Sources */,
 				CE48E74B273449A60074B735 /* HomePageView.swift in Sources */,
 				CE48E7172734363D0074B735 /* mojtabas_sports_shopApp.swift in Sources */,
