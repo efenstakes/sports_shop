@@ -8,12 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let categories: [ProductCategory] = [ .shoe, .tshirt, .ball, .game ]
+    @State var selectedCategory: String = "tshirt"
+    
     var body: some View {
         
         NavigationView {
             
             VStack(alignment: .leading, spacing: 0) {
                 
+                
+                // categproes
+                HStack{
+                    ForEach(categories, id: \.self) { category in
+
+                        CategoryPickerView(
+                            category: category,
+                            isSelected: selectedCategory == category.rawValue
+                        )
+                        .onTapGesture {
+                            selectedCategory = category.rawValue
+                        }
+
+                    }
+                }
+                
+                
+                // products
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHStack {
                         
