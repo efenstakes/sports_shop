@@ -10,6 +10,9 @@ import SwiftUI
 struct ProductDetailsPageView: View {
     let product: Product
     
+    @Environment(\.presentationMode) var presentationMode
+
+    
     var body: some View {
         GeometryReader { geo in
             VStack(alignment: .leading) {
@@ -21,7 +24,7 @@ struct ProductDetailsPageView: View {
                     .scaledToFill()
                     .frame(
                         width: geo.size.width,
-                        height: (geo.size.height/2)+120,
+                        height: (geo.size.height/2)+200,
                         alignment: .center
                     )
                     .ignoresSafeArea()
@@ -30,7 +33,7 @@ struct ProductDetailsPageView: View {
                     
                     // name
                     Text(product.name)
-                        .font(.largeTitle)
+                        .font(.title)
                         .fontWeight(.heavy)
                         .padding(.top, 40)
                     
@@ -38,10 +41,10 @@ struct ProductDetailsPageView: View {
                     HStack {
                         
                         Text("$")
-                            .font(.title3)
+                            .font(.body)
                         
                         Text("\(product.price)")
-                            .font(.title)
+                            .font(.title2)
                             .bold()
                         
                     }
@@ -73,6 +76,8 @@ struct ProductDetailsPageView: View {
                         
                     }) {
                         Text("Add To Cart")
+                            .font(.body)
+                            .bold()
                             .padding()
                             .frame(maxWidth: .infinity)
                             .background(
@@ -85,7 +90,7 @@ struct ProductDetailsPageView: View {
                 .padding(.horizontal)
                 .frame(
                     width: geo.size.width,
-                    height: geo.size.height/2,
+                    height: (geo.size.height/2),
                     alignment: .topLeading
                 )
                 .background(Color.black.opacity(1))
@@ -108,7 +113,10 @@ struct ProductDetailsPageView: View {
                         .background(
                             Color.white.opacity(0.5)
                         )
-                        .cornerRadius(16),
+                        .cornerRadius(16)
+                    .onTapGesture {
+                        presentationMode.wrappedValue.dismiss()
+                    },
                 trailing:
                     Image(systemName: "info")
                         .resizable()
