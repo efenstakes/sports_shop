@@ -8,8 +8,24 @@
 import Foundation
 
 
-enum ProductCategory {
-    case tshirt, shoe, ball, game
+enum ProductCategory: String {
+    case tshirt = "tshirt"
+    case ball = "ball"
+    case shoe = "shoe"
+    case game = "game"
+    
+    func getImage() -> String {
+        switch self {
+        case .tshirt:
+            return "tshirt"
+        case .shoe:
+            return "shoe"
+        case .ball:
+            return "ball"
+        case .game:
+            return "goalpost"
+        }
+    }
 }
 
 struct Product: Identifiable {
